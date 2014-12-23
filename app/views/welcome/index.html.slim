@@ -1,0 +1,8 @@
+h1 Willkommen
+
+p
+	- if @glossaries.empty?
+		| Es sind keine Glossaries definiert
+	- else
+		= "Anzahl Glossaries: #{@glossaries.count}"
+
